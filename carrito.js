@@ -6,6 +6,7 @@ const listaCursos = document.querySelector('#lista-cursos');
 let arregloCarrito = [];
 
 // Apartado de metodos
+cargarEventos();
 
 function cargarEventos(){
     //CRUD
@@ -16,5 +17,9 @@ function cargarEventos(){
 function agregarCurso(event){
     //Evitando que el hipervinculo no redireccione
     event.preventDefault();
-    
+
+    //validar si la clase existe, mande los elementos
+    if (event.target.classList.contains('agregar-carrito')) {
+        const cursoSeleccionado = event.target.parentElement;
+    }
 }
