@@ -21,5 +21,6 @@ function agregarCurso(event){
     //validar si la clase existe, mande los elementos
     if (event.target.classList.contains('agregar-carrito')) {
         const cursoSeleccionado = event.target.parentElement;
+        console.log(cursoSeleccionado);
     }
 }
